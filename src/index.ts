@@ -9,7 +9,7 @@ import tar from 'tar'
 const cwd = process.cwd()
 
 export function downloadFile(url: string, targetPath: string) {
-  const get = url.includes('https://')? https.get : http.get
+  const get = url.includes('https://') ? https.get : http.get
 
   return new Promise<boolean>((resolve) => {
     const target = fs.createWriteStream(targetPath)
@@ -63,8 +63,19 @@ async function downloadFederationTypes(
 }
 
 interface Options {
+  /**
+   * Set remotes list of type packages
+   */
   remotes: Record<string, string>
+  /**
+   * Set output dir in your project
+   */
   outputDir: string
+  /**
+   * Set remote file name
+   *
+   * Default: [name]-dts.tgz
+   */
   remoteFileName?: string
 }
 
@@ -72,7 +83,10 @@ export default class WebpackRemoteTypesPlugin {
   options: Options
 
   constructor(options: Options) {
-    this.options = options
+    this.options = {
+      ...options,
+      remoteFileName: '[name]-dts.tgz',
+    }
   }
 
   apply(compiler: Compiler) {
