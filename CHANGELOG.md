@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.1 (2021-09-23)
+
+
+### Bug Fixes
+
+* release script ([9f14882](https://github.com/fabio7maia/webpack5-remote-types-plugin/commit/9f148820cbed28e1436fe7a169bb17085043332e))
+
 ### 0.0.3 (2021-09-23)
 
 
