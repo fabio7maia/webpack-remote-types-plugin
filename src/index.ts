@@ -76,7 +76,7 @@ export default class WebpackRemoteTypesPlugin {
   }
 
   apply(compiler: Compiler) {
-    compiler.hooks.beforeRun.tapPromise('WebpackRemoteTypesPlugin', () => {
+    compiler.hooks.initialize.tap('WebpackRemoteTypesPlugin', () => {
       return downloadFederationTypes(
         this.options.remotes,
         path.resolve(cwd, this.options.outputDir),

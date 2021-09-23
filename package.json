@@ -1,7 +1,7 @@
 {
-  "name": "webpack-remote-types-plugin",
-  "version": "0.2.6",
-  "description": "webpack plugin to download type definitions based on remotes",
+  "name": "webpack5-remote-types-plugin",
+  "version": "0.0.0",
+  "description": "webpack 5 plugin to download type definitions based on remotes",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
@@ -40,15 +40,15 @@
     "semi": false,
     "singleQuote": true
   },
-  "author": "Yulong Ruan <ruanyu1@gmail.com>",
+  "author": "Fábio Maia <fabio7maia@gmail.com>",
   "license": "MIT",
   "keywords": [
     "typescript"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ruanyl/webpack-remote-types-plugin.git"
+    "url": "https://github.com/fabio7maia/webpack5-remote-types-plugin.git"
   },
-  "homepage": "https://github.com/ruanyl/webpack-remote-types-plugin",
-  "bugs": "https://github.com/ruanyl/webpack-remote-types-plugin/issues"
+  "homepage": "https://github.com/fabio7maia/webpack5-remote-types-plugin",
+  "bugs": "https://github.com/fabio7maia/webpack5-remote-types-plugin/issues"
 }

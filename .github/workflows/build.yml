@@ -33,8 +33,8 @@ jobs:
       run: yarn build
     - name: Config git user
       run: |
-        git config --local user.email "ruanyu1@gmail.com"
-        git config --local user.name "Yulong Ruan"
+        git config --local user.email "fabio7maia@gmail.com"
+        git config --local user.name "Fábio Maia"
     - name: Tag release
       run: yarn release
     - name: Push to master
