@@ -79,7 +79,7 @@ interface Options {
   remoteFileName?: string
 }
 
-export default class WebpackRemoteTypesPlugin {
+export default class Webpack5RemoteTypesPlugin {
   options: Options
 
   constructor(options: Options) {
@@ -90,7 +90,7 @@ export default class WebpackRemoteTypesPlugin {
   }
 
   apply(compiler: Compiler) {
-    compiler.hooks.initialize.tap('WebpackRemoteTypesPlugin', () => {
+    compiler.hooks.initialize.tap('Webpack5RemoteTypesPlugin', () => {
       return downloadFederationTypes(
         this.options.remotes,
         path.resolve(cwd, this.options.outputDir),
