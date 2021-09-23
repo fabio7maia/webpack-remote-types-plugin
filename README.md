@@ -23,7 +23,7 @@ yarn add -D webpack5-remote-types-plugin
   }),
 ```
 
-The plugin will download tarball from `http://localhost:9000/app-dts.tgz` and unzip the tarball to `./types` folder
+The plugin will download tarball from `http://localhost:9000/app-dts.tgz` and unzip the tarball to `./types` folder.
 
 ### Thanks
 
